@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <title>Job Hunting Site Survery Form</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <h1 id="title">Job Hunting Site Survey Form</h1>
+    <p id="description"><i>Thank you for taking time to help us improve our platform!</i></p>
+    <form id="survey-form" method="post">
+      
+      <!--Full Name-->
+      <fieldset>
+      <legend class="header-legend">Personal Information</legend>
+        <label id="name-label"> Full Name:
+        <input id="name" type="text" placeholder="Enter your full name" required></input>
+        </label>
+
+        <!--Email Address-->
+        <label id="email-label">Email Address:
+        <input id="email" type="email" placeholder="Enter your email address" required></input>
+      </label>
+
+        <!--Age-->
+        <label id="number-label">Age(optional)
+        <input id="number" type="number" min="2" max="3" placeholder="Enter your age"></input>
+        </label>
+      </fieldset>
+
+
+        <!--Educational Level-->
+        <fieldset>
+         <legend legend class="header-legend">Education & Experience</legend>
+        <label id="educational-label">Educational Level:
+        <select id="dropdown">
+         <option value="">select one option</option>
+         <option value="No Formal Education">No Formal Education</option>
+         <option value="Elementary School">Elementary School (Grades 1-6)</option>
+         <option value="Junior High School">Junior High School (Grades 7-10)</option>
+         <option value="Senior High School">Senior High School (Grades 11-12)</option>
+         <option value="Some College/No Degree">Some College/No Degree</option>
+         <option value="Technical-Vocational/No Degree">Technical-Vocational/No Degree</option>
+         <option value="Associate's Degree">Associate's Degree</option>
+         <option value="Bachelor's Degree">Bachelor's Degree</option>
+         <option value="Master's Degree">Master's Degree</option>
+         <option value="Doctoral Degree/Ph.D.">Doctoral Degree/Ph.D.</option>
+         <option value="Professional Degree (e.g.,MD,JD)">Professional Degree (e.g.,MD,JD)</option>
+        </select>
+
+        <!--Job Experience-->
+
+        <legend id="legend-job">Job Experience:</legend>
+        <div>
+        <label for="rad1"><input type="radio" name="job-experience" id="rad1" value="Fresh Graduate">Fresh Graduate</label>
+        <label for="rad2"><input type="radio" name="job-experience" id="rad2" value="0-1 Year of Experience">0-1 year of experience</label>
+        <label for="rad3"><input type="radio" name="job-experience" id="rad3" value="2-4 Years of Experience">2-4 years of experience</label>
+        <label for="rad4"><input type="radio" name="job-experience" id="rad4" value="5-10 Years of Experience">5-10 years of experience</label>
+        <label for="rad5"><input type="radio" name="job-experience" id="rad5" value="10 Years of Experience">10 years or more of experience</label>
+        </div>
+      </fieldset>
+        <!--Comments-->
+        <fieldset>
+        <legend legend class="header-legend">Feedback</legend>
+        <legend>Features you wish to have:</legend>
+        <label for="check1"><input type="checkbox" name="features" id="checkbox1" value="Advanced Search Filters">Advanced Search Filters</label>
+        <label for="check2"><input type="checkbox" name="features" id="checkbox2" value="User Profiles and Resume Builder">User Profiles and Resume Builder</label>
+        <label for="check3"><input type="checkbox" name="features" id="checkbox3" value="Job Alerts">Job Alerts</label>
+        <label for="check4"><input type="checkbox" name="features" id="checkbox4" value="Application Tracker">Application Tracker</label>
+        <label for="check5"><input type="checkbox" name="features" id="checkbox5" value="Mobile App">Mobile App</label>
+        <legend>Comments or Suggestions:</legend>
+        <textarea placeholder="Enter your comment here..." required></textarea>
+        <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+ </body>
+</html>
